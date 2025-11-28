@@ -1,0 +1,249 @@
+/* ============================================================
+   ESTILOS GENERALES
+============================================================ */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================================================
+   HEADER
+============================================================ */
+.encabezado {
+    background: #003366;
+    color: white;
+}
+
+.titulo-sitio {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo-header {
+    width: 90px;
+    border-radius: 10px;
+}
+
+/* MENÚ */
+.menu-principal ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    background: #00264d;
+    margin: 0;
+}
+
+.menu-principal ul li {
+    margin: 0 15px;
+}
+
+.menu-principal ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-principal ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================================
+   HERO INDEX
+============================================================ */
+.hero {
+    position: relative;
+    color: white;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+/* ============================================================
+   CATÁLOGO INDEX
+============================================================ */
+.catalogo-camaras .service-card {
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* IMÁGENES DEL INDEX (RESTAURADO — COMO ANTES) */
+.catalogo-camaras .service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;   /* ✔ evita imágenes gigantes */
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* TÍTULO DE CADA CÁMARA */
+.catalogo-camaras .service-card h4 {
+    margin-top: 15px;
+    color: #003366;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* DESCRIPCIÓN (NUEVO) */
+.catalogo-camaras .service-card p.descripcion {
+    font-size: 15px;
+    margin-top: -5px;
+    color: #444;
+}
+
+/* PRECIO */
+.catalogo-camaras .service-card p.precio {
+    font-size: 16px;
+    font-weight: bold;
+    color: #003366;
+    margin-top: 10px;
+}
+
+/* ============================================================
+   HERO SERVICIOS
+============================================================ */
+.hero-servicios {
+    background-image: url('imagenes/servicios-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    position: relative;
+    color: white;
+}
+
+.hero-servicios::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.hero-servicios > div {
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================================================
+   ANIMACIÓN
+============================================================ */
+.anim-titulo {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ============================================================
+   SERVICIOS
+============================================================ */
+.service-card {
+    border-radius: 12px;
+    background: white;
+    padding-bottom: 15px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-height: 380px;
+}
+
+/* IMÁGENES GRANDES — SERVICIOS */
+.service-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-card h4 {
+    margin-top: 15px;
+    color: #003366;
+    font-weight: bold;
+}
+
+/* ICONOS DE SERVICIOS */
+.icono-servicio img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* CTA */
+.cta-servicios {
+    padding: 40px;
+    background: #003366;
+    border-radius: 10px;
+    color: white;
+}
+
+/* ============================================================
+   BOTONES FLOTANTES
+============================================================ */
+.botones-flotantes {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-flotante img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.btn-flotante img:hover {
+    transform: scale(1.1);
+}
+
+/* ============================================================
+   CONTACTO
+============================================================ */
+.contacto-bg {
+    background: linear-gradient(135deg, #003366, #00264d);
+    padding: 40px 20px;
+    border-radius: 12px;
+    color: white !important;
+}
+
+/* TARJETAS */
+.formulario-contacto,
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+}
+
+/* IMAGEN CONTACTO */
+.contacto-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* TEXTO BLANCO FORZADO */
+.contacto-bg h2,
+.contacto-bg h4,
+.contacto-bg p,
+.contacto-bg strong {
+    color: white !important;
+}
