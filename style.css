@@ -71,16 +71,40 @@ body {
     background: white;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+    padding-bottom: 20px;
 }
 
-/* IMÁGENES DEL INDEX (NO TOCAR) */
+/* IMÁGENES DEL INDEX (RESTAURADO — COMO ANTES) */
 .catalogo-camaras .service-card img {
     width: 100%;
     height: 200px;
-    object-fit: contain;
+    object-fit: contain;   /* ✔ evita imágenes gigantes */
     padding: 8px;
     background-color: #fff;
     border-radius: 10px;
+}
+
+/* TÍTULO DE CADA CÁMARA */
+.catalogo-camaras .service-card h4 {
+    margin-top: 15px;
+    color: #003366;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* DESCRIPCIÓN (NUEVO) */
+.catalogo-camaras .service-card p.descripcion {
+    font-size: 15px;
+    margin-top: -5px;
+    color: #444;
+}
+
+/* PRECIO */
+.catalogo-camaras .service-card p.precio {
+    font-size: 16px;
+    font-weight: bold;
+    color: #003366;
+    margin-top: 10px;
 }
 
 /* ============================================================
@@ -108,7 +132,7 @@ body {
 }
 
 /* ============================================================
-   ANIMACIÓN (MISMA QUE INDEX)
+   ANIMACIÓN
 ============================================================ */
 .anim-titulo {
     opacity: 0;
@@ -132,16 +156,14 @@ body {
     padding-bottom: 15px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    min-height: 380px; /* altura ideal */
+    min-height: 380px;
 }
 
-/* IMÁGENES GRANDES DE SERVICIOS — CORRECTO Y PROPORCIONADO */
+/* IMÁGENES GRANDES — SERVICIOS */
 .service-card img {
     width: 100%;
-    height: 280px;          /* tamaño ideal */
-    object-fit: cover;      /* no recorta de forma extraña */
-    padding: 0;
-    background: white;
+    height: 280px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -210,18 +232,19 @@ body {
     box-shadow: 0 3px 10px rgba(0,0,0,0.25);
 }
 
-/* IMAGEN LATERAL CONTACTO — MÁS GRANDE */
+/* IMAGEN CONTACTO */
 .contacto-img {
     width: 100%;
-    height: 400px; /* mayor tamaño */
+    height: 400px;
     object-fit: cover;
     border-radius: 12px;
 }
 
-/* TEXTO BLANCO */
+/* TEXTO BLANCO FORZADO */
 .contacto-bg h2,
 .contacto-bg h4,
 .contacto-bg p,
 .contacto-bg strong {
     color: white !important;
 }
+
